@@ -11,11 +11,6 @@ const provider = new ethers.providers.JsonRpcProvider(rpcURL);
 
 const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, provider)
 
-// const playSound = () => {
-//     player.play('ding.mp3', function (err) {
-//         if (err) throw err
-//     })
-// }
 
 const TRANSFER_THRESHOLD = 1000000000000 // 100,000 USDC
 const main = async () => {
